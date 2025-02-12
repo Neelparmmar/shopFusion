@@ -1,0 +1,165 @@
+/* General Styling */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f3f4f6;
+  color: #333;
+}
+
+.form_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8fafc;
+}
+
+.signup_form {
+  background-color: white;
+  width: 100%;
+  max-width: 600px;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.signup_form h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #333;
+}
+
+.image_input_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.image_preview {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 15px;
+  border: 2px solid #e2e8f0;
+}
+
+.image_preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image_input {
+  display: none;
+}
+
+.image_label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #6457f9;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.image_label:hover {
+  background-color: #4a3bb1;
+}
+
+/* Input Fields */
+.signup_form_input {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.signup_form_input div {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.form_text_input,
+.input_textarea {
+  padding: 10px;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form_text_input:focus,
+.input_textarea:focus {
+  border-color: #6457f9;
+}
+
+.form_text_input {
+  height: 45px;
+}
+
+.signup_textares_section {
+  grid-column: 1 / 3;
+}
+
+.input_textarea {
+  resize: none;
+  height: 100px;
+}
+
+em {
+  color: #e53e3e;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+/* Submit Button */
+.form_submit {
+  margin-top: 20px;
+  background-color: #6457f9;
+  color: white;
+  font-size: 18px;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form_submit:hover {
+  background-color: #4a3bb1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .signup_form {
+    width: 80%;
+    padding: 20px;
+  }
+
+  .signup_form_input {
+    grid-template-columns: 1fr;
+  }
+
+  .signup_textares_section {
+    grid-column: 1 / 2;
+  }
+}

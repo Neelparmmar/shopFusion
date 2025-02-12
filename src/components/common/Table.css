@@ -1,0 +1,17 @@
+.common-table {
+  width: 100%;
+  margin-bottom: 16px;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
+}
+.common-table thead th {
+  height: 50px;
+  background-color: #36304a;
+  color: white;
+  text-transform: uppercase;
+}
+.common-table tbody tr {
+  height: 50px;
+  text-align: center;
+}

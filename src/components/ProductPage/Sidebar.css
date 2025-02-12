@@ -1,0 +1,67 @@
+/* Sidebar container */
+.product-sidebar {
+  width: 250px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+}
+
+/* Sidebar heading */
+.product-sidebar h2 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+/* Category links container */
+.category-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Category link styling */
+.category-links a {
+  font-size: 12px;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.category-links a:hover {
+  background-color: #e9ecef;
+  color: #007bff;
+  transform: translateX(5px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Loading and error styling */
+.category-links em {
+  color: red;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+  .product-sidebar {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .product-sidebar h2 {
+    font-size: 20px;
+  }
+}
